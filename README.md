@@ -1,8 +1,8 @@
-# blackwell-infer / runtime
+# sparkinfer-runtime
 
 Edge AI inference runtime for **NVIDIA RTX Spark** and RTX 5090-class GPUs.
 
-Part of [gittensor-ai-lab](https://github.com/gittensor-ai-lab) — SN74 decentralized kernel and runtime optimization network.
+Part of [gittensor-ai-lab](https://github.com/orgs/gittensor-ai-lab) — SN74 decentralized kernel and runtime optimization network.
 
 ---
 
@@ -52,7 +52,7 @@ This runtime is built specifically for that environment.
 ## Components
 
 ```
-include/blackwell/
+include/sparkinfer/
 ├── runtime.h       — Runtime lifecycle, device query
 ├── scheduler.h     — Continuous batching, chunked prefill, priority preemption
 └── kv_cache.h      — Paged KV block allocator (FP8 compression option)

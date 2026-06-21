@@ -3,7 +3,7 @@
 #include <cstdint>
 #include <memory>
 
-namespace blackwell {
+namespace sparkinfer {
 
 struct RuntimeConfig {
     int device_id = 0;
@@ -31,4 +31,4 @@ public:
     virtual int num_sms() const = 0;
 };
 
-} // namespace blackwell
+} // namespace sparkinfer

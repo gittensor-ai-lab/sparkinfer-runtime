@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.20)
-project(blackwell_runtime LANGUAGES CXX CUDA)
+project(sparkinfer_runtime LANGUAGES CXX CUDA)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CUDA_STANDARD 17)
@@ -21,9 +21,9 @@ file(GLOB_RECURSE RUNTIME_SRC
     "csrc/cuda/*.cu"
 )
 
-add_library(blackwell_runtime SHARED ${RUNTIME_SRC})
-target_include_directories(blackwell_runtime PUBLIC include)
-target_compile_options(blackwell_runtime PRIVATE
+add_library(sparkinfer_runtime SHARED ${RUNTIME_SRC})
+target_include_directories(sparkinfer_runtime PUBLIC include)
+target_compile_options(sparkinfer_runtime PRIVATE
     $<$<COMPILE_LANGUAGE:CUDA>:
         -O3
         --use_fast_math

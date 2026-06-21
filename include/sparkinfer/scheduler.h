@@ -4,7 +4,7 @@
 #include <vector>
 #include <functional>
 
-namespace blackwell {
+namespace sparkinfer {
 
 enum class SchedulePolicy {
     CONTINUOUS_BATCHING,
@@ -43,4 +43,4 @@ private:
     std::unique_ptr<Impl> impl_;
 };
 
-} // namespace blackwell
+} // namespace sparkinfer

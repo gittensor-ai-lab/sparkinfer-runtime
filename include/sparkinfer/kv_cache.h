@@ -3,7 +3,7 @@
 #include <cstdint>
 #include <cuda_runtime.h>
 
-namespace blackwell {
+namespace sparkinfer {
 
 enum class KVLayout {
     PAGED,       // PagedAttention-style block allocation
@@ -50,4 +50,4 @@ private:
     std::unique_ptr<Impl> impl_;
 };
 
-} // namespace blackwell
+} // namespace sparkinfer
